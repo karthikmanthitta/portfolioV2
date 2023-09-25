@@ -1,9 +1,8 @@
 import { Box, Button, Card, Typography } from "@mui/material";
 import { motion } from "framer-motion";
 import Pic from "../assets/pic.png";
-import Flag from "../utils/Flag";
+import India from "../assets/india.jpg";
 import Marquee from "react-fast-marquee";
-import { colors, fonts } from "../utils/theme";
 
 const Hero = () => {
   return (
@@ -15,33 +14,36 @@ const Hero = () => {
         alignItems="center"
         height="100%"
         width="100%"
+        style={{ overflowX: "hidden" }}
       >
-        <Box height="10%" display="flex" alignSelf="flex-start">
-          <Card
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              width: "fit-content",
-              height: "1.7vw",
-              gap: "1vw",
-              padding: "0.4vw 1vw",
-              marginTop: "1vw",
-              borderRadius: "0 0.7vw 0.7vw 0",
-            }}
+        <div className="flex h-1/6 w-full justify-between">
+          <motion.div
+            initial={{ x: -500 }}
+            animate={{ x: 0 }}
+            transition={{ duration: 1.3 }}
+            className="p-3 gap-3 self-start h-1/2 flex text-theme font-bold font-['Raleway'] text-sm md:text-lg bg-light mt-5 rounded-tr-xl rounded-br-xl w-2/6 md:w-1/6 justify-center items-center"
           >
-            <Typography
-              style={{
-                color: colors.dark,
-                fontFamily: fonts.bold,
-                fontSize: "1.176vw",
-              }}
-            >
-              Based in India
-            </Typography>
-            <Flag />
-          </Card>
-        </Box>
-        <Box height="90%" display="flex" width="100%" justifyContent="center">
+            Based in India
+            <img src={India} className="h-3/4 md:h-full" />
+          </motion.div>
+          <motion.div
+            initial={{ x: 500 }}
+            animate={{ x: 0 }}
+            transition={{ duration: 1.3 }}
+            className="flex gap-3 md:gap-5 p-7 text-lg md:text-2xl fixed right-0"
+          >
+            <p className="font-['Raleway'] text-light font-semibold cursor-pointer">
+              About
+            </p>
+            <p className="font-['Raleway'] text-light font-semibold cursor-pointer">
+              Work
+            </p>
+            <p className="font-['Raleway'] text-light font-semibold cursor-pointer">
+              Contact
+            </p>
+          </motion.div>
+        </div>
+        <Box height="83.3%" display="flex" width="100%" justifyContent="center">
           <Box
             style={{
               left: 0,
@@ -49,41 +51,33 @@ const Hero = () => {
               display: "flex",
               flexDirection: "column",
             }}
+            className="justify-center md:justify-start gap-5"
           >
             <motion.img
               src={Pic}
               style={{
                 display: "flex",
-                height: "35vw",
+                // height: "75vh",
                 left: 0,
                 zIndex: 100,
               }}
+              className="h-3/5 md:h-4/5"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ duration: 1.7 }}
+              transition={{ duration: 1.3 }}
             />
-            <Typography
-              style={{
-                fontSize: "2.941vw",
-                color: colors.light,
-                fontFamily: fonts.light,
-                textAlign: "center",
-              }}
-            >
+            <p className="text-light font-['Raleway'] text-2xl md:text-4xl justify-center items-center flex font-bold">
               Frontend Web Developer
-            </Typography>
+            </p>
           </Box>
-          <Box position="absolute" top="30vh">
-            <Marquee>
-              <Typography
-                style={{
-                  fontSize: "9.559vw",
-                  color: colors.light,
-                  fontFamily: fonts.bold,
-                }}
-              >
-                Karthik Manthitta
-              </Typography>
+          <Box position="absolute" className="w-full">
+            <Marquee speed={30} delay={1.3}>
+              <p className="text-light text-7xl md:text-9xl font-['Raleway'] font-extrabold overflow-hidden">
+                Karthik&nbsp;&nbsp;
+              </p>
+              <p className="text-light text-7xl md:text-9xl font-['Raleway'] font-extrabold overflow-hidden">
+                Manthitta&nbsp;&nbsp;
+              </p>
             </Marquee>
           </Box>
         </Box>
