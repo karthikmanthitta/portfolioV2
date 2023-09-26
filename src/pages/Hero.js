@@ -26,28 +26,11 @@ const Hero = () => {
             Based in India
             <img src={India} className="h-3/4 md:h-full" />
           </motion.div>
-          <motion.div
-            initial={{ x: 500 }}
-            animate={{ x: 0 }}
-            transition={{ duration: 1.3 }}
-            className="flex gap-3 md:gap-5 p-7 text-lg md:text-2xl fixed right-0"
-          >
-            <p className="font-['Raleway'] text-light font-semibold cursor-pointer">
-              About
-            </p>
-            <p className="font-['Raleway'] text-light font-semibold cursor-pointer">
-              Work
-            </p>
-            <p className="font-['Raleway'] text-light font-semibold cursor-pointer">
-              Contact
-            </p>
-          </motion.div>
         </div>
         <Box height="83.3%" display="flex" width="100%" justifyContent="center">
           <Box
             style={{
               left: 0,
-              zIndex: 100,
               display: "flex",
               flexDirection: "column",
             }}
@@ -57,9 +40,7 @@ const Hero = () => {
               src={Pic}
               style={{
                 display: "flex",
-                // height: "75vh",
                 left: 0,
-                zIndex: 100,
               }}
               className="h-3/5 md:h-4/5"
               initial={{ opacity: 0 }}
@@ -70,7 +51,7 @@ const Hero = () => {
               Frontend Web Developer
             </p>
           </Box>
-          <Box position="absolute" className="w-full">
+          <Box position="absolute" className="w-full" zIndex="-5">
             <Marquee speed={30} delay={1.3}>
               <p className="text-light text-7xl md:text-9xl font-['Raleway'] font-extrabold overflow-hidden">
                 Karthik&nbsp;&nbsp;

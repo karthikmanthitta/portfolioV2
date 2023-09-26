@@ -3,7 +3,7 @@ import { colors } from "../utils/theme";
 
 const About = () => {
   return (
-    <Box height="100vh" bgcolor={"#000"}>
+    <Box height="100vh" bgcolor={"#fff"}>
       About
     </Box>
   );
