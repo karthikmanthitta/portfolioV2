@@ -13,7 +13,7 @@ const About = () => {
               transition={{ ease: "linear", duration: 0.4 }}
               className="text-xl md:text-3xl font-['Raleway'] font-semibold tracking-wider [word-spacing:0.1vw]"
             >
-              Helping teams build user interfaces faster and better with the
+              Helping teams build vibrant user interfaces faster and better with the
               best practices in mind.
             </motion.p>
           </div>
