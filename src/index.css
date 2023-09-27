@@ -9,13 +9,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #343a40;
+  background-color: #2a324b;
 }
 
 html {
   ::-webkit-scrollbar {
     display: none;
   }
+  scroll-behavior: smooth;
 }
 
 code {

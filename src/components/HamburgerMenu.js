@@ -17,16 +17,59 @@ const HamburgerMenu = ({ handleCloseMenu }) => {
       >
         <AiOutlineClose />
       </div>
-      <div className="ml-12 flex flex-col gap-10">
-        <p className="font-['Raleway'] text-light font-semibold cursor-pointer text-4xl">
-          About
-        </p>
-        <p className="font-['Raleway'] text-light font-semibold cursor-pointer text-4xl">
-          Work
-        </p>
-        <p className="font-['Raleway'] text-light font-semibold cursor-pointer text-4xl">
-          Contact
-        </p>
+      <div className="ml-12 flex flex-col gap-20">
+        <div className="flex flex-col gap-7">
+          <p className="font-['Raleway'] text-light text-sm">Navigation</p>
+          <motion.div
+            initial={{ x: 100 }}
+            animate={{ x: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="font-['Raleway'] text-light text-4xl font-semibold flex"
+          >
+            <p className="cursor-pointer hover:scale-110 transition-all ">
+              About
+            </p>
+          </motion.div>
+          <motion.div
+            initial={{ x: 100 }}
+            animate={{ x: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="font-['Raleway'] text-light text-4xl font-semibold flex"
+          >
+            <p className="cursor-pointer hover:scale-110 transition-all ">
+              Work
+            </p>
+          </motion.div>
+          <motion.div
+            initial={{ x: 100 }}
+            animate={{ x: 0 }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+            className="font-['Raleway'] text-light text-4xl font-semibold flex"
+          >
+            <p className="cursor-pointer hover:scale-110 transition-all ">
+              Contact
+            </p>
+          </motion.div>
+        </div>
+        <div className="text-light flex flex-col font-['Raleway'] gap-7">
+          <p className="text-sm">Socials</p>
+          <div className="flex gap-7">
+            <a
+              href="https://www.linkedin.com/in/karthik-manthitta/"
+              className="font-semibold hover:scale-110 hover:underline"
+              target="_blank"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="https://github.com/karthikmanthitta"
+              className="font-semibold hover:scale-110 hover:underline"
+              target="_blank"
+            >
+              Github
+            </a>
+          </div>
+        </div>
       </div>
     </motion.div>
   );

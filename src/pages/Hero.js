@@ -1,7 +1,7 @@
-import { Box, Button, Card, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import { motion } from "framer-motion";
 import Pic from "../assets/pic.png";
-import India from "../assets/india.jpg";
+import India from "../assets/india2.png";
 import Marquee from "react-fast-marquee";
 
 const Hero = () => {
@@ -21,7 +21,7 @@ const Hero = () => {
             initial={{ x: -500 }}
             animate={{ x: 0 }}
             transition={{ duration: 1.3 }}
-            className="p-3 gap-3 self-start h-1/2 flex text-theme font-bold font-['Raleway'] text-sm md:text-lg bg-light mt-5 rounded-tr-xl rounded-br-xl w-2/6 md:w-1/6 justify-center items-center"
+            className="p-3 gap-3 self-start h-1/2 flex text-[#fff] font-bold font-['Raleway'] text-sm md:text-lg bg-[#000] mt-5 rounded-tr-xl rounded-br-xl w-2/6 md:w-1/6 justify-center items-center"
           >
             Based in India
             <img src={India} className="h-3/4 md:h-full" />
@@ -47,7 +47,7 @@ const Hero = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 1.3 }}
             />
-            <p className="text-light font-['Raleway'] text-2xl md:text-4xl justify-center items-center flex font-bold">
+            <p className="text-light font-['Raleway'] text-2xl md:text-4xl justify-center items-center flex">
               Frontend Web Developer
             </p>
           </Box>
