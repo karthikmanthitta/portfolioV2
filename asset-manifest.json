@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolioV2/static/css/main.c351e864.css",
-    "main.js": "/portfolioV2/static/js/main.caba82e7.js",
+    "main.js": "/portfolioV2/static/js/main.fd6532fa.js",
     "static/js/787.d9a20797.chunk.js": "/portfolioV2/static/js/787.d9a20797.chunk.js",
     "static/media/pic.png": "/portfolioV2/static/media/pic.7da7e00d2c1c96405880.png",
     "static/media/Raleway-ExtraLight.ttf": "/portfolioV2/static/media/Raleway-ExtraLight.c02a81d7724fb7895dae.ttf",
@@ -10,11 +10,11 @@
     "static/media/india2.png": "/portfolioV2/static/media/india2.1791e3c5ef964983a393.png",
     "index.html": "/portfolioV2/index.html",
     "main.c351e864.css.map": "/portfolioV2/static/css/main.c351e864.css.map",
-    "main.caba82e7.js.map": "/portfolioV2/static/js/main.caba82e7.js.map",
+    "main.fd6532fa.js.map": "/portfolioV2/static/js/main.fd6532fa.js.map",
     "787.d9a20797.chunk.js.map": "/portfolioV2/static/js/787.d9a20797.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c351e864.css",
-    "static/js/main.caba82e7.js"
+    "static/js/main.fd6532fa.js"
   ]
 }
