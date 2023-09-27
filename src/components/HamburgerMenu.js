@@ -2,6 +2,12 @@ import { motion } from "framer-motion";
 import { AiOutlineClose } from "react-icons/ai";
 
 const HamburgerMenu = ({ handleCloseMenu }) => {
+  const delayClose = () => {
+    setTimeout(() => {
+      handleCloseMenu();
+    }, 300);
+  };
+
   return (
     <motion.div
       key="hamburger"
@@ -26,14 +32,32 @@ const HamburgerMenu = ({ handleCloseMenu }) => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="font-['Raleway'] text-light text-4xl font-semibold flex"
           >
-            <p className="cursor-pointer hover:scale-110 transition-all ">
-              About
-            </p>
+            <a
+              href="#home"
+              className="cursor-pointer hover:scale-110 transition-all "
+              onClick={delayClose}
+            >
+              Home
+            </a>
           </motion.div>
           <motion.div
             initial={{ x: 100 }}
             animate={{ x: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
+            className="font-['Raleway'] text-light text-4xl font-semibold flex"
+          >
+            <a
+              href="#about"
+              className="cursor-pointer hover:scale-110 transition-all "
+              onClick={delayClose}
+            >
+              About
+            </a>
+          </motion.div>
+          <motion.div
+            initial={{ x: 100 }}
+            animate={{ x: 0 }}
+            transition={{ duration: 0.6, delay: 0.5 }}
             className="font-['Raleway'] text-light text-4xl font-semibold flex"
           >
             <p className="cursor-pointer hover:scale-110 transition-all ">
@@ -43,7 +67,7 @@ const HamburgerMenu = ({ handleCloseMenu }) => {
           <motion.div
             initial={{ x: 100 }}
             animate={{ x: 0 }}
-            transition={{ duration: 0.6, delay: 0.5 }}
+            transition={{ duration: 0.6, delay: 0.7 }}
             className="font-['Raleway'] text-light text-4xl font-semibold flex"
           >
             <p className="cursor-pointer hover:scale-110 transition-all ">

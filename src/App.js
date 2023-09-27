@@ -44,7 +44,7 @@ function App() {
       <AnimatePresence>
         {openMenu && <HamburgerMenu handleCloseMenu={handleCloseMenu} />}
       </AnimatePresence>
-      <section id="hero">
+      <section id="home">
         <Hero />
       </section>
       <section id="about">
