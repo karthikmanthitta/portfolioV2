@@ -84,14 +84,14 @@ const HamburgerMenu = ({ handleCloseMenu }) => {
           <div className="flex gap-7">
             <a
               href="https://www.linkedin.com/in/karthik-manthitta/"
-              className="font-semibold hover:scale-110 hover:underline"
+              className="font-semibold hover:scale-110 hover:underline transition-all"
               target="_blank"
             >
               LinkedIn
             </a>
             <a
               href="https://github.com/karthikmanthitta"
-              className="font-semibold hover:scale-110 hover:underline"
+              className="font-semibold hover:scale-110 hover:underline transition-all"
               target="_blank"
             >
               Github
