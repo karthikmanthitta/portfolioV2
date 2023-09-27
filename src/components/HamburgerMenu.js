@@ -70,9 +70,13 @@ const HamburgerMenu = ({ handleCloseMenu }) => {
             transition={{ duration: 0.6, delay: 0.7 }}
             className="font-['Raleway'] text-light text-4xl font-semibold flex"
           >
-            <p className="cursor-pointer hover:scale-110 transition-all ">
+            <a
+              href="#contact"
+              className="cursor-pointer hover:scale-110 transition-all "
+              onClick={delayClose}
+            >
               Contact
-            </p>
+            </a>
           </motion.div>
         </div>
         <div className="text-light flex flex-col font-['Raleway'] gap-7">

@@ -5,6 +5,7 @@ import { AnimatePresence } from "framer-motion";
 import HamburgerMenu from "./components/HamburgerMenu";
 import Menu from "./components/Menu";
 import HamburgerIcon from "./components/HamburgerIcon";
+import Contact from "./pages/Contact";
 
 function App() {
   const [showHamburger, setShowHamburger] = useState(false);
@@ -49,6 +50,9 @@ function App() {
       </section>
       <section id="about">
         <About />
+      </section>
+      <section id="contact">
+        <Contact />
       </section>
     </div>
   );

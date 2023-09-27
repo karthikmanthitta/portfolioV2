@@ -17,9 +17,12 @@ export default function Menu() {
       <p className="font-['Raleway'] text-light font-semibold cursor-pointer hover:scale-125 transition-all">
         Work
       </p>
-      <p className="font-['Raleway'] text-light font-semibold cursor-pointer hover:scale-125 transition-all">
+      <a
+        href="#contact"
+        className="font-['Raleway'] text-light font-semibold cursor-pointer hover:scale-125 transition-all"
+      >
         Contact
-      </p>
+      </a>
     </motion.div>
   );
 }
