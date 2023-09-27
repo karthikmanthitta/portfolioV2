@@ -10,7 +10,7 @@ export default function HamburgerIcon({ handleHamburgerOpen }) {
       className="flex gap-3 md:gap-5 p-7 text-lg md:text-2xl fixed right-0 z-[1001]"
       onClick={handleHamburgerOpen}
     >
-      <div className="bg-[#000] rounded-full">
+      <div className="bg-[#000] rounded-full border-[1px] border-[rgba(255,255,255,0.3)]">
         <p className="text-light cursor-pointer p-4">
           <HiOutlineMenu />
         </p>
