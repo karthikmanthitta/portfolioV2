@@ -6,18 +6,18 @@ const Contact = () => {
     <div className="h-screen bg-[#000] text-light font-['Raleway']">
       <div className="h-5/6 flex justify-center items-center px-8 md:px-56">
         <div className="w-full p-8">
-          <div className="text-5xl md:text-6xl p-8 flex gap-8 items-center">
+          <div className="text-5xl md:text-6xl p-8 md:pl-8 flex gap-8 items-center pl-0">
             <img src={Pic} className="rounded-full h-24" />
             <p>Get in touch</p>
           </div>
           <hr />
-          <div className="flex gap-8 md:gap-16 p-8 font-semibold flex-col md:flex-row">
+          <div className="flex gap-8 md:gap-16 px-2 py-8 md:p-8 font-semibold flex-col md:flex-row">
             <motion.a
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.5 }}
               href="mailto:karthikmanthitta@gmail.com"
-              className="border-2 border-[rgba(255,255,255,0.4)] rounded-2xl p-4 text-sm flex items-center hover:scale-125 transition-all"
+              className="border-2 border-[rgba(255,255,255,0.4)] rounded-2xl p-4 text-sm justify-center flex items-center hover:scale-125 transition-all"
             >
               karthikmanthitta@gmail.com
             </motion.a>
@@ -26,7 +26,7 @@ const Contact = () => {
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.5 }}
               href="tel:+919920993844"
-              className="border-2 border-[rgba(255,255,255,0.4)] rounded-2xl p-4 flex items-center hover:scale-125 transition-all"
+              className="border-2 border-[rgba(255,255,255,0.4)] rounded-2xl p-4 flex justify-center items-center hover:scale-125 transition-all"
             >
               +91 9920993844
             </motion.a>

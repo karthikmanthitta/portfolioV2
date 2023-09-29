@@ -37,16 +37,16 @@ const About = () => {
               <motion.img
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
-                transition={{ duration: 0.5 }}
+                transition={{ duration: 0.8 }}
                 src={Pic}
                 className="md:w-3/4 w-full hidden md:flex"
               />
               <motion.img
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
-                transition={{ duration: 0.5 }}
+                transition={{ duration: 0.8 }}
                 src={Pic2}
-                className="h-32 rounded-full md:hidden w-fit"
+                className="max-w-[40vw] rounded-full md:hidden"
               />
             </div>
             <div className="p-4 md:w-1/2 flex items-center">
