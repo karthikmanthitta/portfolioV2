@@ -30,7 +30,7 @@ const WorkCardVcs = () => {
           // style={{ height: "5vh" }}
           initial={{ x: 0, scale: 1 }}
           animate={hovered ? { x: -10, scale: 1.2 } : { x: 0, scale: 1 }}
-          className="w-1/4 md:w-1/6"
+          className="w-1/6"
         />
         <motion.img
           src={github}
@@ -38,7 +38,7 @@ const WorkCardVcs = () => {
           // className="self-center"
           initial={{ x: 0, scale: 1 }}
           animate={hovered ? { x: 10, scale: 1.2 } : { x: 0, scale: 1 }}
-          className="w-1/4 md:w-1/6 bg-light rounded-full"
+          className="w-1/6 bg-light rounded-full"
         />
       </div>
     </motion.div>

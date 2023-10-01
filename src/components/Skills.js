@@ -7,9 +7,9 @@ import { motion } from "framer-motion";
 const Skills = () => {
   return (
     <motion.div
-      initial={{ x: -100 }}
-      whileInView={{ x: 0 }}
-      transition={{ duration: 0.6 }}
+      initial={{ x: -300, opacity: 0 }}
+      whileInView={{ x: 0, opacity: 1 }}
+      transition={{ duration: 1 }}
       className="font-['Raleway'] text-light flex flex-col pb-0 p-4 md:p-4 items-center gap-3 md:gap-2"
     >
       <div className="font-bold text-xl md:text-3xl items-center">Skills</div>

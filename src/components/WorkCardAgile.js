@@ -28,7 +28,7 @@ const WorkCardAgile = () => {
           src={jira}
           initial={{ scale: 1 }}
           animate={hovered ? { scale: 1.2 } : { scale: 1 }}
-          className="w-1/4 md:w-1/6"
+          className="w-1/6"
         />
       </div>
     </motion.div>

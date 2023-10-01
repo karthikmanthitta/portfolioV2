@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 const Experience = () => {
   return (
     <motion.div
-      initial={{ x: 100 }}
-      whileInView={{ x: 0 }}
-      transition={{ duration: 0.6 }}
+      initial={{ x: 300, opacity: 0 }}
+      whileInView={{ x: 0, opacity: 1 }}
+      transition={{ duration: 1 }}
       className="font-['Raleway'] text-light flex flex-col p-8 md:p-4 items-center gap-3 md:gap-8"
     >
       <div className="font-bold text-xl md:text-3xl items-center">
@@ -17,18 +17,18 @@ const Experience = () => {
           <div className="w-2/3 md:w-1/2 flex items-center">
             <img src={lti} />
           </div>
-          <div className="flex flex-row md:flex-col gap-4 md:gap-0">
+          <div className="flex flex-row md:flex-col gap-4 md:gap-0 text-sm md:text-lg">
             <div>
-              <p className="text-sm md:text-lg">LTIMindtree</p>
-              <p className="text-sm md:text-lg">Product Engineer</p>
+              <p>LTIMindtree</p>
+              <p>Product Engineer</p>
             </div>
             <div>
-              <p className="text-sm md:text-lg">Mumbai, India</p>
-              <p className="text-sm md:text-lg">AUG 2021 - Present</p>
+              <p>Mumbai, India</p>
+              <p>AUG 2021 - Present</p>
             </div>
           </div>
         </div>
-        <div className="text-xs md:text-lg [word-spacing:0.7vw] tracking-wide font-semibold px-4">
+        <div className="text-sm md:text-lg [word-spacing:0.7vw] tracking-wide font-semibold px-4">
           <ul className="m-3">
             <li className="list-item list-disc">
               Achieved a 25% increase in user satisfaction scores by

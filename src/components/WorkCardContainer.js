@@ -29,13 +29,13 @@ const WorkCardContainer = () => {
           src={docker}
           initial={{ x: 0, scale: 1 }}
           animate={hovered ? { x: -10, scale: 1.2 } : { x: 0, scale: 1 }}
-          className="w-1/4 md:w-1/6"
+          className="w-1/6"
         />
         <motion.img
           src={kubernetes}
           initial={{ x: 0, scale: 1 }}
           animate={hovered ? { x: 10, scale: 1.2 } : { x: 0, scale: 1 }}
-          className="w-1/4 md:w-1/6"
+          className="w-1/6"
         />
       </div>
     </motion.div>

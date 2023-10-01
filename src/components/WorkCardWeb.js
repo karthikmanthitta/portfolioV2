@@ -33,21 +33,21 @@ const WorkCardWeb = () => {
           // style={{ height: "5vh" }}
           initial={{ x: 0, scale: 1 }}
           animate={hovered ? { x: -10, scale: 1.2 } : { x: 0, scale: 1 }}
-          className="w-1/4 md:w-1/6"
+          className="w-1/6"
         />
         <motion.img
           src={css}
           // style={{ height: "5vh" }}
           initial={{ scale: 1 }}
           animate={hovered ? { scale: 1.2 } : { scale: 1 }}
-          className="w-1/4 md:w-1/6"
+          className="w-1/6"
         />
         <motion.img
           src={js}
           // style={{ height: "5vh" }}
           initial={{ x: 0, scale: 1 }}
           animate={hovered ? { x: 10, scale: 1.2 } : { x: 0, scale: 1 }}
-          className="w-1/4 md:w-1/6"
+          className="w-1/6"
         />
       </div>
       <div className="flex gap-4 justify-center">
@@ -56,14 +56,14 @@ const WorkCardWeb = () => {
           // style={{ height: "5vh" }}
           initial={{ x: 0, scale: 1 }}
           animate={hovered ? { x: -10, scale: 1.2 } : { x: 0, scale: 1 }}
-          className="w-1/4 md:w-1/6"
+          className="w-1/6"
         />
         <motion.img
           src={tailwind}
           // style={{ height: "3vh" }}
           initial={{ x: 0, scale: 1 }}
           animate={hovered ? { x: 10, scale: 1.2 } : { x: 0, scale: 1 }}
-          className="w-1/4 md:w-1/6 self-center"
+          className="w-1/6 self-center"
         />
       </div>
     </motion.div>
