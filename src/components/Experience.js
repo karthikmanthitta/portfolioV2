@@ -7,7 +7,7 @@ const Experience = () => {
       initial={{ x: 300, opacity: 0 }}
       whileInView={{ x: 0, opacity: 1 }}
       transition={{ duration: 1 }}
-      className="font-['Raleway'] text-light flex flex-col p-8 md:p-4 items-center gap-3 md:gap-8"
+      className="font-['Raleway'] text-light flex flex-col pt-1 p-8 md:p-4 items-center gap-3 md:gap-8"
     >
       <div className="font-bold text-xl md:text-3xl items-center">
         Experience

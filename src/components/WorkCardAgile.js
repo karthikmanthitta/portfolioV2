@@ -21,7 +21,7 @@ const WorkCardAgile = () => {
         className="text-light font-bold text-xs md:text-lg"
         style={{ visibility: hovered ? "visible" : "hidden" }}
       >
-        Agile Methodology
+        Agile
       </motion.div>
       <div className="flex gap-4 justify-center w-full">
         <motion.img
