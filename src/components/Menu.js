@@ -14,9 +14,12 @@ export default function Menu() {
       >
         About
       </a>
-      <p className="font-['Raleway'] text-light font-semibold cursor-pointer hover:scale-125 transition-all">
+      <a
+        href="#work"
+        className="font-['Raleway'] text-light font-semibold cursor-pointer hover:scale-125 transition-all"
+      >
         Work
-      </p>
+      </a>
       <a
         href="#contact"
         className="font-['Raleway'] text-light font-semibold cursor-pointer hover:scale-125 transition-all"

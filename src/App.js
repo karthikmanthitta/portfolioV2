@@ -1,11 +1,12 @@
-import { useEffect, useState } from "react";
-import About from "./pages/About";
-import Hero from "./pages/Hero";
+import React, { Suspense, useEffect, useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import HamburgerMenu from "./components/HamburgerMenu";
 import Menu from "./components/Menu";
 import HamburgerIcon from "./components/HamburgerIcon";
 import Contact from "./pages/Contact";
+import Work from "./pages/Work";
+import Hero from "./pages/Hero";
+import About from "./pages/About";
 
 function App() {
   const [showHamburger, setShowHamburger] = useState(false);
@@ -50,6 +51,9 @@ function App() {
       </section>
       <section id="about">
         <About />
+      </section>
+      <section id="work">
+        <Work />
       </section>
       <section id="contact">
         <Contact />
