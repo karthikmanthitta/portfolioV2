@@ -1,35 +1,41 @@
 import Pic from "../assets/favicon.png";
 import { motion } from "framer-motion";
+import { ContactUs } from "../components/Email";
 
 const Contact = () => {
   return (
     <div className="h-screen bg-[#000] text-light font-['Raleway']">
-      <div className="h-5/6 flex justify-center items-center px-8 md:px-56">
-        <div className="w-full p-8">
-          <div className="text-5xl md:text-6xl p-8 md:pl-8 flex gap-8 items-center pl-0">
-            <img src={Pic} className="rounded-full h-24" />
-            <p>Get in touch</p>
+      <div className="h-5/6 flex">
+        <div className="w-full flex flex-col md:flex-row">
+          <div className="flex flex-row md:flex-col w-full md:w-1/2 justify-center items-center gap-8 px-8 h-1/3 md:h-full">
+            <div className="flex gap-4 items-center flex-col md:flex-row">
+              <img src={Pic} className="rounded-full h-24" />
+              <p className="text-xl md:text-6xl">Get in touch</p>
+            </div>
+            <div className="border-[0.1vw] border-light w-full rounded-3xl hidden md:block" />
+            <div className="flex flex-col text-sm md:text-xl">
+              <motion.a
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.5 }}
+                href="mailto:karthikmanthitta@gmail.com"
+                className="rounded-2xl justify-center flex items-center hover:scale-125 transition-all"
+              >
+                karthikmanthitta@gmail.com
+              </motion.a>
+              <motion.a
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.5 }}
+                href="tel:+919920993844"
+                className="rounded-2xl p-4 flex justify-center items-center hover:scale-125 transition-all"
+              >
+                +91 9920993844
+              </motion.a>
+            </div>
           </div>
-          <hr />
-          <div className="flex gap-8 md:gap-16 px-2 py-8 md:p-8 font-semibold flex-col md:flex-row">
-            <motion.a
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.5 }}
-              href="mailto:karthikmanthitta@gmail.com"
-              className="border-2 border-[rgba(255,255,255,0.4)] rounded-2xl p-4 text-sm justify-center flex items-center hover:scale-125 transition-all"
-            >
-              karthikmanthitta@gmail.com
-            </motion.a>
-            <motion.a
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.5 }}
-              href="tel:+919920993844"
-              className="border-2 border-[rgba(255,255,255,0.4)] rounded-2xl p-4 flex justify-center items-center hover:scale-125 transition-all"
-            >
-              +91 9920993844
-            </motion.a>
+          <div className="h-2/3 md:h-full md:w-1/2 w-full flex justify-center md:block">
+            <ContactUs />
           </div>
         </div>
       </div>
