@@ -1,24 +1,18 @@
 {
   "files": {
-    "main.css": "/portfolioV2/static/css/main.5dcf91d7.css",
-    "main.js": "/portfolioV2/static/js/main.cfef491a.js",
+    "main.css": "/portfolioV2/static/css/main.618dc2d6.css",
+    "main.js": "/portfolioV2/static/js/main.2e7916a1.js",
     "static/js/787.d9a20797.chunk.js": "/portfolioV2/static/js/787.d9a20797.chunk.js",
-    "static/media/pic2.jpg": "/portfolioV2/static/media/pic2.0e7d3956cb9374048386.jpg",
-    "static/media/pic3.jpg": "/portfolioV2/static/media/pic3.2d5507aabdfc59f8206e.jpg",
-    "static/media/pic.png": "/portfolioV2/static/media/pic.7da7e00d2c1c96405880.png",
     "static/media/Raleway-ExtraLight.ttf": "/portfolioV2/static/media/Raleway-ExtraLight.c02a81d7724fb7895dae.ttf",
     "static/media/Raleway-ExtraBold.ttf": "/portfolioV2/static/media/Raleway-ExtraBold.cda3c9c91d02c73d1eb5.ttf",
     "static/media/Raleway-SemiBold.ttf": "/portfolioV2/static/media/Raleway-SemiBold.9a6a9af38bf678bce031.ttf",
-    "static/media/india2.png": "/portfolioV2/static/media/india2.1791e3c5ef964983a393.png",
-    "static/media/favicon.png": "/portfolioV2/static/media/favicon.c8190c6cd6db30871eb2.png",
-    "static/media/lti.svg": "/portfolioV2/static/media/lti.a81b957a3c782b6547c82b96ecca8c72.svg",
     "index.html": "/portfolioV2/index.html",
-    "main.5dcf91d7.css.map": "/portfolioV2/static/css/main.5dcf91d7.css.map",
-    "main.cfef491a.js.map": "/portfolioV2/static/js/main.cfef491a.js.map",
+    "main.618dc2d6.css.map": "/portfolioV2/static/css/main.618dc2d6.css.map",
+    "main.2e7916a1.js.map": "/portfolioV2/static/js/main.2e7916a1.js.map",
     "787.d9a20797.chunk.js.map": "/portfolioV2/static/js/787.d9a20797.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5dcf91d7.css",
-    "static/js/main.cfef491a.js"
+    "static/css/main.618dc2d6.css",
+    "static/js/main.2e7916a1.js"
   ]
 }
