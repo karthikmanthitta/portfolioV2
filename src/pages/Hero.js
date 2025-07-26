@@ -41,7 +41,7 @@ const Hero = () => {
                 display: "flex",
                 left: 0,
               }}
-              className="h-3/5 md:h-4/5 w-4/5 self-center"
+              className="h-2/5 md:h-4/5 w-4/5 self-center"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1.3 }}
