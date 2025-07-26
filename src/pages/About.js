@@ -1,9 +1,22 @@
 import { Box } from "@mui/material";
 import { motion } from "framer-motion";
-import Pic from "../assets/pic2.jpg";
-import Pic2 from "../assets/pic3.jpg";
+import { assetsBasePath } from "../info";
 
 const About = () => {
+  function getExperienceString(startMonth = 7, startYear = 2021) {
+    const now = new Date();
+    const currentYear = now.getFullYear();
+    const currentMonth = now.getMonth();
+
+    let years = currentYear - startYear;
+
+    if (currentMonth < startMonth) {
+      years -= 1;
+    }
+
+    return `${years}+ years of experience`;
+  }
+
   return (
     <Box height="100vh" bgcolor={"#fff"}>
       <div className="flex w-full h-full p-1 md:p-8 flex-col justify-center gap-10">
@@ -14,10 +27,10 @@ const About = () => {
                 initial={{ y: 100, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ ease: "linear", duration: 0.4 }}
-                className="text-xl md:text-4xl font-['Raleway'] font-semibold tracking-wider [word-spacing:0.1vw]"
+                className="text-lg md:text-2xl font-['Raleway'] font-semibold tracking-wider [word-spacing:0.1vw]"
               >
-                Helping teams build vibrant user interfaces faster and better
-                with the best practices in mind.
+                Helping teams build scalable full-stack applications faster and better, with clean architecture and best 
+                practices in mind right from robust backend services to vibrant, user-centric interfaces.
               </motion.p>
             </div>
             <div className="p-4">
@@ -27,7 +40,7 @@ const About = () => {
                 transition={{ ease: "linear", duration: 0.4 }}
                 className="text-lg md:text-2xl font-['Raleway'] font-semibold tracking-wider"
               >
-                2+ years of experience in the software industry specializing in
+                {getExperienceString()} in the software industry specializing in
                 product development
               </motion.p>
             </div>
@@ -38,14 +51,14 @@ const About = () => {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.8 }}
-                src={Pic}
+                src={`${assetsBasePath}/pic2.jpg`}
                 className="md:w-3/4 w-full hidden md:flex"
               />
               <motion.img
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.8 }}
-                src={Pic2}
+                src={`${assetsBasePath}/pic3.jpg`}
                 className="max-w-[40vw] rounded-full md:hidden"
               />
             </div>

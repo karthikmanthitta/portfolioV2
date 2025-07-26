@@ -1,6 +1,6 @@
-import Pic from "../assets/favicon.png";
 import { motion } from "framer-motion";
 import { ContactUs } from "../components/Email";
+import { assetsBasePath } from "../info";
 
 const Contact = () => {
   return (
@@ -9,7 +9,7 @@ const Contact = () => {
         <div className="w-full flex flex-col md:flex-row">
           <div className="flex flex-row md:flex-col w-full md:w-1/2 justify-center items-center gap-8 px-8 h-1/3 md:h-full">
             <div className="flex gap-4 items-center flex-col md:flex-row">
-              <img src={Pic} className="rounded-full h-24" />
+              <img src={`${assetsBasePath}/favicon.png`} className="rounded-full h-24" />
               <p className="text-xl md:text-6xl">Get in touch</p>
             </div>
             <div className="border-[0.1vw] border-light w-full rounded-3xl hidden md:block" />
